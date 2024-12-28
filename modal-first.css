@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(156, 255, 0, 0.8);
+
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px 0;
+}
+
+.container {
+
+    background-color: rgba(200, 168, 28, 0.69);
+    border-radius: 5%;
+    width: 35%;
+    margin: 0 auto;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+
+}
+
+
+.box-me {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+
+
+}
+
+
+.btn-me {
+    text-align: center;
+    margin: -20px 0;
+    padding: 50px;
+}
+
+input[type=text] {
+    margin-bottom: 50px;
+    padding: 4px 2px;
+    border: none;
+    background-color: rgba(201, 164, 69, 0.592);
+}
+
+input[type=password] {
+    margin-bottom: 50px;
+    padding: 4px 2px;
+    border: none;
+    background-color: rgba(201, 164, 69, 0.592);
+}
+
+
+#btn {
+
+    border: none;
+    padding: 10px 50px;
+    background-color: rgba(204, 231, 160, 0.8);
+}
+
+
+#btn:hover {
+
+    background-color: rgba(200, 168, 28, 0.69);
+}
+
+
+.modal {
+    background-color: rgba(79, 3, 179, 0.2);
+    position: absolute;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 999;
+    right: 10px;
+    top: 10px;
+    display: none;
+    transition: all 1s linear;
+}
