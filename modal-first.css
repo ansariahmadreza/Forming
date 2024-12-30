@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgba(156, 255, 0, 0.8);
+    background-color: rgba(56, 39, 54, 0.8);
 
 }
 
@@ -77,7 +77,7 @@ input[type=password] {
 
 
 .modal {
-    background-color: rgba(79, 3, 179, 0.2);
+    background-color: rgba(173, 179, 3, 0.9);
     position: absolute;
     padding: 30px;
     border-radius: 10px;
