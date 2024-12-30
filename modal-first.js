@@ -5,13 +5,13 @@ let userNameSmall = document.querySelector('.userNameSmall')//پیام تایی�
 let passwordSmall = document.querySelector('.passwordSmall')//پیام تایید یا عدم تایید رمز عبور
 let btn = document.querySelector('.btn')
 
-btn.addEventListener('click',()=>{
+btn.addEventListener('click', () => {
 
-    userNameValue(),
-    passWordValue(),
-    dataValidation()    
+    userNameValue();
+    passWordValue();
+    dataValidation();
 
-} )
+})
 
 
 
@@ -20,8 +20,9 @@ btn.addEventListener('click',()=>{
 function userNameValue() {//تایید رعایت حد نساب نام کاربری
 
     if (userName.value.length < 12) {
-
+        userNameSmall.style.color = 'red'
         userNameSmall.style.display = 'block'
+        userNameSmall.innerHTML = 'حداقل مورد نیاز برای تایید نام کاربری رعایت نشده است'
 
     } else {
 
@@ -41,6 +42,8 @@ function passWordValue() {//تایید رعایت حد نساب رمز عبور
     if (passWord.value.length < 8) {
 
         passwordSmall.style.display = 'block'
+        passwordSmall.style.color = 'red'
+        passwordSmall.innerHTML = 'حداقل مورد نیاز برای تایید رمز عبور رعایت نشده است'
 
 
     } else {
@@ -61,6 +64,7 @@ function dataValidation() {// تایید ثبت نام یا عدم ثبت نام
     if (userName.value.length < 12 || passWord.value.length < 8) {
 
         modal.style.display = 'inline'
+        modal.innerHTML = 'لطفا اطلاعات لازم را به درستی وارد کنید'
 
 
     } else {
@@ -76,10 +80,11 @@ function dataValidation() {// تایید ثبت نام یا عدم ثبت نام
     setTimeout(function () {
 
         modal.style.display = 'none'
+        userNameSmall.style.display = 'none'
+        passwordSmall.style.display = 'none'
 
     }, 3000)
 }
-
 
 
 
