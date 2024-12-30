@@ -1,6 +1,19 @@
 let userName = document.querySelector('.userName')//فراخوانی نام کاربری از html
 let passWord = document.querySelector('.password')//فراخوانی رمز عبور از html
-let modal = document.querySelector('.modal')
+let modal = document.querySelector('.modal')//تایید یا عدم تایید ثبت نام
+let userNameSmall = document.querySelector('.userNameSmall')//پیام تایید یا عدم تایید نام کاربری
+let passwordSmall = document.querySelector('.passwordSmall')//پیام تایید یا عدم تایید رمز عبور
+let btn = document.querySelector('.btn')
+
+btn.addEventListener('click',()=>{
+
+    userNameValue(),
+    passWordValue(),
+    dataValidation()    
+
+} )
+
+
 
 
 
@@ -17,6 +30,8 @@ function userNameValue() {//تایید رعایت حد نساب نام کارب�
         userNameSmall.style.color = 'blue'
         userNameSmall.innerHTML = 'حد نصاب رعایت شده است'
     }
+
+
 }
 
 

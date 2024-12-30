@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/omid.css">
+    <link rel="stylesheet" href="css/modal-first.css">
     <title>Document</title>
 </head>
 
@@ -17,15 +17,17 @@
 
             <label for="">
 
-                username<input type="text" id="userName" placeholder="inter username">
+                username<input type="text" class="userName" placeholder="inter username">
+                <span class="userNameSmall ">حداقل مورد نیاز برای تایید نام کاربری رعایت نشده است</span>
 
-                password <input type="password" id="password" placeholder="inter your password">
+                password <input type="password" class="password" placeholder="inter your password">
+                <span class="passwordSmall">حداقل مورد نیاز برای تایید رمز عبور رعایت نشده است</span>
 
             </label>
         </div>
 
         <div class="btn-me">
-            <button onclick="dataValidation()" id="btn">login</button>
+            <button id="btn" class="btn">login</button>
 
         </div>
 
@@ -36,7 +38,7 @@
 
     </section>
 
-    <script src="js/lamp.js"></script>
+    <script src="js/modal-first.js"></script>
 </body>
 
 </html>
