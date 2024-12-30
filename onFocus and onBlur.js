@@ -1,49 +1,41 @@
 let userNameGet = document.querySelector('.userName')
 let passwordGet = document.querySelector('.password')
+let userNameSmall = document.querySelector('.userNameSmall')
+let passwordSmall = document.querySelector('.passwordSmall')
 
-
-function userNameFocus() {
-
-    if (userNameGet.value.length < 12 ) {
-
-        console.log('مقدار وارد شده کمتر از حد مجاز است')
-    }
-
-
-}
 
 
 
 function userNameBlur() {
 
 
-    if (userNameGet.value.length > 12) {
+    if (userNameGet.value.length < 12) {
 
-        console.log('مقدار لازم رعایت شده است')
-        
+        userNameSmall.style.display = 'block'
+        userNameSmall.style.color = 'black'
+
+    } else {
+        userNameSmall.style.display = 'block'
+        userNameSmall.innerHTML = 'نام کاربری صحیح است'
+
     }
 
 
 }
 
 
-function passwordFocus() {
 
-
-    if (passwordGet.value.length < 8) {
-
-        console.log('مقدار لازم رعایت نشده است')
-    }
-
-}
 
 
 function passwordBlur() {
 
 
-    if (passwordGet.value.length > 8) {
+    if (passwordGet.value.length < 8) {
 
-        console.log('مقدار لازم رعایت شده است')
+        passwordSmall.style.display = 'block'
+    } else {
+        passwordSmall.style.display = 'block'
+        passwordSmall.innerHTML = 'رمز عبور کاملا صحیح وارد شده است'
     }
 
 } 
