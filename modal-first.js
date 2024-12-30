@@ -1,53 +1,70 @@
-//cod me
-
-// let idText = document.getElementById('text')
-
-// let idPassWord = document.getElementById('password')
-
-// function clickFunc() {
-
-//     if (idPassWord.value.length >= 8 && idText.value.length >= 12) {
-
-//         alert('مقدار گذرواژه به درستی وارد شده است')
-
-//     } else {
-
-//         alert('مقدار صحیح وارد نشده است')
-//     }
-
-
-// }
-
-
-
-//code teacher
-
-let userNameInput = document.querySelector('#userName')
-let passWordInput = document.querySelector('#password')
+let userName = document.querySelector('.userName')//فراخوانی نام کاربری از html
+let passWord = document.querySelector('.password')//فراخوانی رمز عبور از html
 let modal = document.querySelector('.modal')
 
 
 
-function dataValidation() {
+function userNameValue() {//تایید رعایت حد نساب نام کاربری
 
+    if (userName.value.length < 12) {
 
-
-    if (userNameInput.value.length < 12 || passWordInput.value.length < 8) {
-        //alert('مقدار وارد شده کمتر از حد مجاز است')
-        modal.style.display = 'inline'
+        userNameSmall.style.display = 'block'
 
     } else {
-        modal.innerHTML = 'ثبت نام موفقیت امیز بود'
-        modal.style.display = 'inline'
-        modal.style.background=' rgba(32, 218, 209, 0.8) '
+
+
+        userNameSmall.style.display = 'block'
+        userNameSmall.style.color = 'blue'
+        userNameSmall.innerHTML = 'حد نصاب رعایت شده است'
+    }
+}
+
+
+function passWordValue() {//تایید رعایت حد نساب رمز عبور
+
+
+    if (passWord.value.length < 8) {
+
+        passwordSmall.style.display = 'block'
+
+
+    } else {
+
+
+        passwordSmall.style.display = 'block'
+        passwordSmall.style.color = 'blue'
+        passwordSmall.innerHTML = 'حد نصاب رعایت شده است'
 
 
     }
 
-    setTimeout(function() {
+}
 
+function dataValidation() {// تایید ثبت نام یا عدم ثبت نام
+
+
+    if (userName.value.length < 12 || passWord.value.length < 8) {
+
+        modal.style.display = 'inline'
+
+
+    } else {
+
+
+        modal.style.display = 'inline'
+        modal.innerHTML = 'ثبت نام شما موفقیت امیز بود'
+
+    }
+
+
+
+    setTimeout(function () {
 
         modal.style.display = 'none'
 
-    },3000)
+    }, 3000)
 }
+
+
+
+

@@ -28,6 +28,7 @@ label {
     flex-direction: column;
     padding-top: 15px;
 
+
 }
 
 
@@ -87,4 +88,17 @@ input[type=password] {
     top: 10px;
     display: none;
     transition: all 1s linear;
+}
+
+.small {
+    padding-top: 45px;
+    text-align: right;
+
+}
+
+.userNameSmall,.passwordSmall {
+
+    display: none;
+    color: brown;
+
 }
