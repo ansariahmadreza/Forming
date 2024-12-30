@@ -22,7 +22,7 @@ function userNameValue() {//تایید رعایت حد نساب نام کارب�
     if (userName.value.length < 12) {
         userNameSmall.style.color = 'red'
         userNameSmall.style.display = 'block'
-        userNameSmall.innerHTML = 'حداقل مورد نیاز برای تایید نام کاربری رعایت نشده است'
+        userNameSmall.innerHTML = 'لطفا مقدار صحیح را وارد کنید'
 
     } else {
 
@@ -43,7 +43,7 @@ function passWordValue() {//تایید رعایت حد نساب رمز عبور
 
         passwordSmall.style.display = 'block'
         passwordSmall.style.color = 'red'
-        passwordSmall.innerHTML = 'حداقل مورد نیاز برای تایید رمز عبور رعایت نشده است'
+        passwordSmall.innerHTML = 'لطفا مقدار صحیح را وارد کنید'
 
 
     } else {
