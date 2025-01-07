@@ -1,0 +1,33 @@
+body {
+    background: linear-gradient(90deg, rgb(112, 107, 204) 0%, rgb(93, 93, 186) 35%, rgb(69, 132, 145) 100%);
+}
+
+h2 {
+    color: white;
+}
+
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    padding: 0  -50vw;
+    justify-content: space-evenly;
+
+}
+
+button{
+    background-color:skyblue;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 5px;
+} 
+
+
+.cont-Input {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
