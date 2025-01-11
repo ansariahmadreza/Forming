@@ -1,0 +1,57 @@
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+
+.big-Cont {
+    display: none;
+}
+
+
+h1 {
+    font-size: 120px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.title-event {
+    background-color: skyblue;
+    padding: 5px 20px;
+    border-radius: 5%;
+}
+
+.event-one {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(47, 45, 45, 0.2);
+    margin: 55px 20px;
+}
+
+.event-tow{
+    display: flex;
+}
+
+
+.box-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: skyblue;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 15px 10px;
+    border-radius: 15px;
+    margin: 150px;
+    background-color: rgba(227, 211, 219, 0);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
+    
+}
