@@ -1,0 +1,57 @@
+body {
+
+    background-color: rgb(64, 50, 50);
+
+}
+
+.hed {
+    padding-top: 10px;
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(124, 120, 98, 0.763);
+
+}
+
+
+
+li {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.group-i{
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+input {
+    background-color: blanchedalmond;
+    border: none;
+}
+
+
+.form {
+
+    text-align: center;
+
+}
+
+
+
+.modal {
+    display: none;
+    position: absolute;
+    padding: 20px  25px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    top: -150px;
+    right: 20px;
+    z-index: 999;
+    background-color: black;
+}
