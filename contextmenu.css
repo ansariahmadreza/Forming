@@ -1,0 +1,35 @@
+li {
+    list-style-type: none;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+
+}
+
+.context-menu {
+    background-color: rgb(243, 242, 242);
+    position: relative;
+    width: 200px;
+    height: 170px;
+    padding-top: 0.4vh;
+    display: none;
+    border-radius: 5px;
+
+}
+
+.delete:hover{
+    color: red;
+    
+}
+.delete{
+    
+    transition: color 0.2s ease;
+}
+
+
+.a:hover{
+    color: rgb(70, 70, 233);
+}
