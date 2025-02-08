@@ -6,16 +6,16 @@ btn.addEventListener('click', btnshow)
 span.addEventListener('click', spanshow)
 
 
-function btnshow() {
+function btnshow() {/// نشان دادن modal با دکمه
 
     parents.style.display = 'block'
     document.body.style.backdropFilter = 'blur(10px)'
-    btn.blur()
+    btn.blur()/// از بین بردن  حالت فوکوس و توجه به عنصر
     
 
 }
 
-function spanshow() {
+function spanhide() { //// پنهان کردن modal با ضربدر
 
     parents.style.display = 'none'
     span.style.cursor = 'pointer'
@@ -24,7 +24,7 @@ function spanshow() {
 }
 
 
-document.addEventListener('keydown', function (event) {
+document.addEventListener('keydown', function (event) { /// پنهان کردن modal با دکمهEsc
 
 
     if (event.key === 'Escape') {
