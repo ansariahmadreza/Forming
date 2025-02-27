@@ -1,0 +1,91 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 220px);
+  justify-content: center;
+
+
+}
+
+h3 {
+  background-color: black;
+  color: white;
+  padding: 10px 50px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  background-color: rgb(99, 107, 107);
+
+}
+
+button {
+  border: none;
+  padding-left: 10px;
+  cursor: pointer;
+
+}
+
+.todo {
+  height: 30px;
+}
+
+
+.task {
+  background-color: dimgray;
+  color: white;
+}
+
+.btn{
+  cursor: pointer;
+}
+
+
+
+.boxTsk1 {
+  height: 100vh;
+  width: 20px;
+}
+
+.drop {
+
+  width: 150px;
+  margin: 0 auto;
+  height: 500px;
+  border: 2px solid black;
+}
+
+.modal {
+  display: flex;
+  background-color: #f0f0ff;
+  width: 200px;
+  justify-content: space-between;
+  border-radius: 6px;
+  padding: 5px 5px;
+
+
+}
+
+.dis {
+  display: none;
+}
+
+
+
+.widTodo {
+  width: 200px;
+
+}
+
+
+.submit {
+  background-color: chartreuse;
+  border: none;
+  padding: 3px 0px;
+  margin-top: 5px;
+  font-weight: bold;
+  width: 200px;
+
+}

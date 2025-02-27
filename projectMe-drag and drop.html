@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>test</title>
+</head>
+
+<body>
+
+
+    <div class="board">
+
+        <!-- modal -->
+        <div class="column boxTask1" id="no-status">
+            <h3>No Status</h3>
+
+            <div class="boxTask1">
+
+                <section class="secTodo dis" id="todoHeader">
+                    <div class="modal">
+                        <div class="greenTodo">Add Todo</div>
+                        <button id="btn">&times;</button>
+                    </div>
+
+                    <div class="body">
+
+                        <input type="text" id="todoInput" class="widTodo" placeholder="Enter a task">
+                        <input type="submit" value="Add Todo" class="widTodo submit" id="addTodoBtn">
+
+                    </div>
+                </section>
+
+
+
+
+
+
+                <div class="task flex todo">+Add Todo</div>
+
+                <div class="boxTodo">
+
+                    <div class="taskMe flex" draggable="true" id="pizza">buy a pizza
+
+                        <button class="taskMe delete flex">X</button>
+                    </div>
+
+
+
+                    <div class="taskMe flex" draggable="true" id="learn">learn js
+
+
+                        <button class="taskMe delete flex">x</button>
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+        <!-- modal -->
+
+
+        <div class="column " id="not-started">
+            <h3>Not Started</h3>
+            <div class="boxTask drop" id="task1"></div>
+        </div>
+
+
+
+        <div class="column " id="in-progress">
+            <h3>In Progress</h3>
+            <div class="drop" id="task2"></div>
+        </div>
+
+        <div class="column " id="completed">
+            <h3>Completed</h3>
+            <div class="boxTask drop"></div>
+        </div>
+    </div>
+
+
+
+    <!-- 
+    <h1 id="react" draggable="true">react</h1>
+    <h1 id="vue" draggable="true">vue</h1>
+    <h1 id="angular js" draggable="true">angular js</h1> -->
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
