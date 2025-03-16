@@ -1,0 +1,21 @@
+.container {
+    margin: 200px auto;
+    text-align: center;
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    border-radius: 5%;
+    padding-top:10px ;
+}
+
+.kg {
+    margin-right: 8px;
+}
+
+body {
+
+    
+    background: linear-gradient(90deg, rgb(3, 103, 83)
+     0%, rgb(9, 121, 112) 35%,
+      rgba(0, 212, 255, 1) 100%);
+}
