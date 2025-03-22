@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+#keyboard {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+.key {
+    padding: 10px;
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+}
+.key:active {
+    background-color: #bbb;
+}
+input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.keyboard {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.key {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.k {
+    animation: pressEffect 0.2s ease-in-out;
+}
+
+@keyframes pressEffect {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.9); }
+    100% { transform: scale(1); }
+}
+
