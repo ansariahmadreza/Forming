@@ -8,12 +8,21 @@ setInterval(function () {
 
     let myTime = new Date()
 
+    timeSec = myTime.getSeconds()
+
     hours.innerHTML = myTime.getHours() + ' ' + ':'
-    minutes.innerHTML = myTime.getMinutes() + ' ' +':'
-    second.innerHTML = myTime.getSeconds()
+    minutes.innerHTML = myTime.getMinutes() + ' ' + ':'
 
 
+    if (timeSec < 10) {
 
+
+        second.innerHTML = '0' + timeSec
+    }else{
+        
+        second.innerHTML = timeSec
+    }
+   
     console.log('هر یک ثانیه')/// برای امتحان کردن درستی سینتکس setinterval
 
 }, 1000)
