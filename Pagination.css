@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin-top: 100px;
+}
+
+.borderSolid {
+    border: 1px solid black;
+}
+
+.containerNamesUsers {
+    margin: 0px auto;
+    width: 200px;
+}
+
+.box1 {
+    width: 60px;
+    height: 40px;
+    padding: 10px 15px;
+    background-color: rgb(25, 120, 222);
+    font-weight: bold;
+    margin: 0px 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.box1:hover {
+    background-color: green;
+}
+
+
+
+
+.boxPage {
+    margin:30px  0px;
+    display: flex;
+    justify-content: center;
+
+
+}
